@@ -1,0 +1,30 @@
+package giantsuperprogramtime;
+
+/**********************************************************
+ *                                                        *
+ *    Exercise: 2.14                                      *
+ *                                                        *
+ *    Purpose: Print 1-4 using print, println, printf     *
+ *                                                        *
+ *    Author: Matthew Walker                              *
+ *                                                        *
+ *    Class: CIS 043 - Software Development with Java     *
+ *           Mission College, Santa Clara, CA             *
+ *                                                        *
+ *    Date: 9/3/14                                        *
+ *                                                        *
+ **********************************************************/
+
+public class GiantSuperProgramTime {
+    
+    public static void main(String[] args) {
+        System.out.println( "1 2 3 4" );    // using 1 println statements
+        
+        System.out.print( "1 " );            // using 4 print statements
+        System.out.print( "2 " );      
+        System.out.print( "3 " );  
+        System.out.print( "4\n" );
+        
+        System.out.printf( "%d %d %d %d\n", 1, 2, 3, 4 );   // using 1 printf
+    }
+}
