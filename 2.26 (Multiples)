@@ -1,0 +1,40 @@
+package pkg2.pkg26.multiples;
+
+import java.util.Scanner;
+
+/**********************************************************
+ *                                                        *
+ *    Exercise: 2.26                                      *
+ *                                                        *
+ *    Purpose: Determine if number is multiple of another *
+ *                                                        *
+ *    Author: Matthew Walker                              *
+ *                                                        *
+ *    Class: CIS 043 - Software Development with Java     *
+ *           Mission College, Santa Clara, CA             *
+ *                                                        *
+ *    Date: 9/3/14                                        *
+ *                                                        *
+ **********************************************************/
+ 
+public class Multiples {
+
+    public static void main(String[] args) {
+    
+        Scanner input = new Scanner( System.in );
+        int number1, number2;
+        
+        System.out.printf( "Please allow me to determine if one number is a multiple of another.\nEnter the larger number first.\n" );
+        System.out.print( "Enter an integer: ");
+        number1 = input.nextInt();
+        
+        System.out.print( "And another integer: " );
+        number2 = input.nextInt();
+  
+        if ( ( number1 % number2) == 0 ) {
+            System.out.printf( "%d is a multiple of %d!\n", number1, number2);
+        } else if ( ( number1 % number2) != 0 ) {
+                System.out.printf( "%d is NOT a multiple of %d!\n", number1, number2 );
+                }
+    }
+}
