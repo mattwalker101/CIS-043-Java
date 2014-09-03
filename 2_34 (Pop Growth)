@@ -1,1 +1,40 @@
-*
+package pkg2.pkg34.population.growth;
+/**********************************************************
+ *                                                        *
+ *    Exercise: 2.34                                      *
+ *                                                        *
+ *    Purpose: Estimate world population growth over time *
+ *                                                        *
+ *    Author: Matthew Walker                              *
+ *                                                        *
+ *    Class: CIS 043 - Software Development with Java     *
+ *           Mission College, Santa Clara, CA             *
+ *                                                        *
+ *    Date: 9/3/14                                        *
+ *                                                        *
+ **********************************************************/
+ 
+ 
+
+
+public class PopulationGrowth {
+
+    public static void main(String[] args) {
+        
+        System.out.printf( "Hello and Welcome to Matthew's Population Estimator!\n" );
+        
+        double currentPop = 7.05e9;
+        double growthRate = 1.011;
+        
+        System.out.printf( "Current World Population is %.0f\n", currentPop );
+        System.out.printf( "\n*******************************\n" );
+        
+        System.out.printf( "At current growth rate, World Population will grow as follows!\n" );
+        
+        for ( int a = 1; a <= 5; a++ ) {
+            currentPop *= growthRate;
+            System.out.printf( "After %d years, Population will be %.0f\n", a, currentPop );
+        }
+    }
+}
+
