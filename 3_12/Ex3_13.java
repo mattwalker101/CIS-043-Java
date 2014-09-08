@@ -25,30 +25,56 @@ public class Ex3_12 {
         //display initial balance
         System.out.printf( "Account1 balance: $%.2f\n", account1.getBalance() );
         System.out.printf( "Account2 balance: $%.2f\n", account2.getBalance() );
+        System.out.println( "*************************\n");
         
         //get input from user for account 1
         Scanner input = new Scanner( System.in );
         double depositAmount;   
         System.out.print( "Enter deposit amount for Account1: " );
         depositAmount = input.nextDouble();
-        System.out.printf( "\nAdding %.2f to Account1 balance!\n\n", 
+        System.out.printf( "\nAdding $%.2f to Account1 balance!\n\n", 
                 depositAmount );
         account1.credit( depositAmount );
         
         //display balances
         System.out.printf( "Account1 balance: $%.2f\n", account1.getBalance() );
         System.out.printf( "Account2 balance: $%.2f\n", account2.getBalance() );
-        
+        System.out.println( "*************************\n");
+                
         // get user input for account2
         System.out.print( "Enter deposit amount for Account2: " );
         depositAmount = input.nextDouble();
-        System.out.printf( "\nAdding %.2f to Account2 balance!\n\n", 
+        System.out.printf( "\nAdding $%.2f to Account2 balance!\n\n", 
                 depositAmount );
         account2.credit( depositAmount );
         
          //display balances
         System.out.printf( "Account1 balance: $%.2f\n", account1.getBalance() );
         System.out.printf( "Account2 balance: $%.2f\n", account2.getBalance() );
+        System.out.println( "*************************\n");
+        
+        // get input for debit charges
+        double debitAmount;
+        System.out.print( "Enter amount to debit from Account1: " );
+        debitAmount = input.nextDouble();
+        System.out.printf( "\nSubtracting $%.2f from Account1!\n", debitAmount );
+        account1.debit( debitAmount );
+        
+        //display balances
+        System.out.printf( "Account1 balance: $%.2f\n", account1.getBalance() );
+        System.out.printf( "Account2 balance: $%.2f\n", account2.getBalance() );
+        System.out.println( "*************************\n");
+        
+        // get input for debit charges
+        System.out.print( "Enter amount to debit from Account2: " );
+        debitAmount = input.nextDouble();
+        System.out.printf( "\nSubtracting $%.2f from Account2!\n", debitAmount );
+        account2.debit( debitAmount );
+        
+        //display balances
+        System.out.printf( "Account1 balance: $%.2f\n", account1.getBalance() );
+        System.out.printf( "Account2 balance: $%.2f\n", account2.getBalance() );
+        System.out.println( "*************************\n");
         
     }
 
