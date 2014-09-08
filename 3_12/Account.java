@@ -33,7 +33,7 @@ public class Account {
     
     public void debit( double amount ) {    // to debit from account
         if ( amount > balance ) {
-            System.out.printf( "Debit amount exceeds account balance!\n" );
+            System.out.printf( "\n**Debit amount exceeds account balance!**\n" );
         } else {
             balance -= amount;
         }
