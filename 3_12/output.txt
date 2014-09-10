@@ -1,0 +1,38 @@
+run:
+Account1 balance: $50.00
+Account2 balance: $0.00
+*************************
+
+Enter deposit amount for Account1: 100
+
+Adding $100.00 to Account1 balance!
+
+Account1 balance: $150.00
+Account2 balance: $0.00
+*************************
+
+Enter deposit amount for Account2: 200
+
+Adding $200.00 to Account2 balance!
+
+Account1 balance: $150.00
+Account2 balance: $200.00
+*************************
+
+Enter amount to debit from Account1: 75
+
+Subtracting $75.00 from Account1!
+Account1 balance: $75.00
+Account2 balance: $200.00
+*************************
+
+Enter amount to debit from Account2: 250
+
+Subtracting $250.00 from Account2!
+
+**Debit amount exceeds account balance!**
+Account1 balance: $75.00
+Account2 balance: $200.00
+*************************
+
+BUILD SUCCESSFUL (total time: 17 seconds)
