@@ -1,1 +1,52 @@
-*
+/*********************************************************
+ *                                                        
+ *    Exercise: 3.14                                           
+ *                                                        
+ *    Purpose: Employee salary manager                                           
+ *                                                        
+ *    Author: Matthew Walker                              
+ *                                                        
+ *    Class: CIS 043 - Software Development with Java     
+ *           Mission College, Santa Clara, CA             
+ *                                                        
+ *    Due Date: 9/15/14                                              
+ *                                                        
+ **********************************************************/
+
+package ex3_14;
+
+import java.util.Scanner;
+
+public class Ex3_14 {
+
+    public static void main() {
+        Employee emp1 = new Employee( "John", "Snow", 85000);
+        Employee emp2 = new Employee( "Ned", "Stark", 120000);
+        
+        
+        // display initial values
+        System.out.printf( "This is Employee Management!\n");
+        System.out.printf( "Your current employee info is as follows...\n");
+        System.out.printf( "First\tLast\tSalary\n");
+        System.out.printf( "%s\t%s\t%.2f\n", emp1.getFirstName(), emp1.getLastName(),
+                emp1.getSalary() );
+        System.out.printf( "%s\t%s\t%.2f\n", emp2.getFirstName(), emp2.getLastName(),
+                emp2.getSalary() );
+        System.out.printf( "************************************\n\n");
+        
+        // Give a 10% raise
+        System.out.printf( "And now with a 10% raise...\n");
+        emp1.setSalary( (emp1.getSalary()*1.1 ) );
+        emp2.setSalary( (emp2.getSalary()*1.1 ) );
+        
+        // Display new values
+        System.out.printf( "First\tLast\tSalary\n");
+        System.out.printf( "%s\t%s\t%.2f\n", emp1.getFirstName(), emp1.getLastName(),
+                emp1.getSalary() );
+        System.out.printf( "%s\t%s\t%.2f\n", emp2.getFirstName(), emp2.getLastName(),
+                emp2.getSalary() );
+        System.out.printf( "************************************\n\n");
+        
+    }
+    
+}
