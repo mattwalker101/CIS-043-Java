@@ -19,7 +19,7 @@ import java.util.Scanner;
 
 public class Ex3_14 {
 
-    public static void main() {
+    public static void main( String[] args ) {
         Employee emp1 = new Employee( "John", "Snow", 85000);
         Employee emp2 = new Employee( "Ned", "Stark", 120000);
         
@@ -35,7 +35,7 @@ public class Ex3_14 {
         System.out.printf( "************************************\n\n");
         
         // Give a 10% raise
-        System.out.printf( "And now with a 10% raise...\n");
+        System.out.print( "And now with a 10% raise...\n");
         emp1.setSalary( (emp1.getSalary()*1.1 ) );
         emp2.setSalary( (emp2.getSalary()*1.1 ) );
         
