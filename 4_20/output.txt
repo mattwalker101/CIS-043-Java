@@ -1,0 +1,18 @@
+EX 4.20 OUTPUT
+run:
+Welcome to Matthew's Amazing Salary Calculator!
+You will input data for 3 employees, and I will tell you their weekly wages
+***********************************************
+Input employee name: James Kirk
+Their hours worked this week: 40
+Their hourly wage is: 10
+Input employee name: Bones McCoy
+Their hours worked this week: 50
+Their hourly wage is: 10
+Input employee name: Spock
+Their hours worked this week: 30
+Their hourly wage is: 10
+Employee James Kirk earned $400.00 this week.
+Employee Bones McCoy earned $550.00 this week, with overtime.
+Employee Spock earned $300.00 this week.
+BUILD SUCCESSFUL (total time: 38 seconds)
