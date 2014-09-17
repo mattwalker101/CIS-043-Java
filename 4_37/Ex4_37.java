@@ -61,8 +61,4 @@ public class Ex4_37 {
         
         System.out.print( "Thank you for playing! Come back soon!\n");
     }
-    
-    
 }
-        
-        
