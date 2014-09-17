@@ -27,7 +27,7 @@ public class Ex4_20 {
         
         int counter = 0;
         String name;
-        double hours, rate;
+        double hours, rate, pay, totalPay = 0.0;
         
         // gather user input
         Scanner input = new Scanner( System.in );
@@ -43,14 +43,19 @@ public class Ex4_20 {
         
             // Calculate & display pay for each employee
             if ( hours <= 40 ) {
-                System.out.printf( "Employee %s earned $%.2f this week.\n\n", name, 
-                    ( hours*rate ) ); 
+                pay = hours * rate;
+                totalPay += pay;
+                System.out.printf( "Employee %s earned $%.2f this week.\n\n", name, pay ); 
             } else {
+                pay = (40*rate) + ( (hours-40 )*rate*1.5 ); 
+                totalPay += pay;
                 System.out.printf( "Employee %s earned $%.2f this week, with overtime.\n\n",
-                    name, ( (40*rate) + ( (hours-40 )*rate*1.5 ) ) );
+                    name, pay );
             }
-                 
         }
+        
+        System.out.printf( "Total pay for all employees is: $%.2f\n\n", totalPay );
+        
     }
 }
 
