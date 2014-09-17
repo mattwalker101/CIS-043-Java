@@ -1,0 +1,29 @@
+EX 4.37a OUTPUT
+run:
+Hello! I am Facto, the marvelous factorial program!
+***************************************************
+
+Enter a number to compute (-1 to exit): 0
+0! = 1
+
+Enter a number to compute (-1 to exit): 1
+1! = 1
+
+Enter a number to compute (-1 to exit): 4
+4! = 24
+
+Enter a number to compute (-1 to exit): 3
+3! = 6
+
+Enter a number to compute (-1 to exit): 2
+2! = 2
+
+Enter a number to compute (-1 to exit): 10
+10! = 3628800
+
+Enter a number to compute (-1 to exit): -2
+-2 is not positive... Try again!
+
+Enter a number to compute (-1 to exit): -1
+Thank you for playing! Come back soon!
+BUILD SUCCESSFUL (total time: 19 seconds)
