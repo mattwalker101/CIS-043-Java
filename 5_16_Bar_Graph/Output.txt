@@ -1,0 +1,16 @@
+run:
+Tell me 5 integers, and I will print a bar of *s for that number!
+#1: 1
+#2: 3
+#3: 7
+#4: 6
+#5: 3
+**********************************
+1 : *
+3 : ***
+7 : *******
+6 : ******
+3 : ***
+Thank you, and have a nice day!
+
+BUILD SUCCESSFUL (total time: 12 seconds)
