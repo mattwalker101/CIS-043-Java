@@ -1,0 +1,5 @@
+EX 5.12 OUTPUT
+run:
+Welcome! This is the product of odd #s 1-15!
+Product is 2027025!
+BUILD SUCCESSFUL (total time: 0 seconds)
