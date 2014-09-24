@@ -2,18 +2,18 @@ package ex5_17;
 
 
 public class Sales {
-    private String name;
+    private int name;
     private int quantity;
     private double price;
     
     // constructor
-    public Sales ( String n, int q, double p ) {        
+    public Sales ( int n, int q, double p ) {        
         name = n;
         quantity = q;
         price = p;
     }
     
-    public void setName( String n ) {
+    public void setName( int n ) {
         name = n;
     }
     
@@ -25,7 +25,7 @@ public class Sales {
         price = p;
     }
     
-    public String getName () {
+    public int getName () {
         return name;
     }
     public int getQuantity() {
@@ -37,6 +37,8 @@ public class Sales {
     }
     
     public void displayProduct() {
-        System.out.printf("%s\t%d\t%.2f\t%.2f\n", name, quantity, price, quantity*price );
+        System.out.printf("%8d:\t%5d\t%12.2f\t$%6.2f\n", name, quantity, price, quantity*price );
     }
+    
+
 }
