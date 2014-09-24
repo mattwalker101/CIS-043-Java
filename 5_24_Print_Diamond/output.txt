@@ -1,4 +1,3 @@
-EX 5_24 OUTPUT
 run:
     *
    ***
@@ -11,24 +10,31 @@ run:
     *
 
 
-**********
+-------------------
 
 Also, I can print a diamond with odd # of rows...
-How many rows would you like? 6
-I need an odd number to make a diamond! Try again!
-
-How many rows would you like? 13
-      *
-     ***
-    *****
-   *******
-  *********
- ***********
-*************
- ***********
-  *********
-   *******
-    *****
-     ***
-      *
-BUILD SUCCESSFUL (total time: 2 minutes 59 seconds)
+How many rows would you like? 23
+           *
+          ***
+         *****
+        *******
+       *********
+      ***********
+     *************
+    ***************
+   *****************
+  *******************
+ *********************
+***********************
+ *********************
+  *******************
+   *****************
+    ***************
+     *************
+      ***********
+       *********
+        *******
+         *****
+          ***
+           *
+BUILD SUCCESSFUL (total time: 6 seconds)
