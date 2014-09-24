@@ -20,65 +20,56 @@ import java.util.Scanner;
 public class Ex5_16 {
 
     public static void main(String[] args) {
-        
-        int n1, n2, n3, n4, n5;
-        
+
+        int n1, n2, n3, n4, n5, number=1, i=1;
         Scanner input = new Scanner( System.in );
                 
         System.out.print( "Tell me 5 integers, and I will print a bar of *s for those numbers!\n" );
         
-        System.out.printf( "#1: ");
+        // user input
+        System.out.printf( "#%d: ", i++);
         n1 = input.nextInt();
-        
-        System.out.print( "#2: ");
+        System.out.printf( "#%d: ", i++);
         n2 = input.nextInt();
-        
-        System.out.print( "#3: ");
+        System.out.printf( "#%d: ", i++);
         n3 = input.nextInt();
-        
-        System.out.print( "#4: ");
+        System.out.printf( "#%d: ", i++);
         n4 = input.nextInt();
-        
-        System.out.print( "#5: ");
+        System.out.printf( "#%d: ", i++);
         n5 = input.nextInt();
-        
-        System.out.print( "--------------------------------------------\n");
-        
-        System.out.printf("%3d : ", n1);
-        for ( int i = 1; i <= n1; i++) {
-            System.out.print( "*" );
-            System.out.print((i%5==0)?" ":"");  // add a space seperator every 5 *s
+
+        // begin to display output
+        System.out.print("\n\n-----------------------\n\n");
+        for ( i = 1; i <=5; i++) {
+            switch(i) {            
+                case 1:
+                    number = n1;
+                    break;
+                case 2:
+                    number = n2;
+                    break;
+                case 3:
+                    number = n3;
+                    break;
+                case 4:
+                    number = n4;
+                    break;
+                case 5:
+                    number = n5;
+                    break;
+                default:
+                    number = 0;
+            }         
+            
+            // display input & bar graph
+            System.out.printf("%3d : ", number);
+            
+            for ( int j = 1; j <= number; j++) {
+                System.out.print( "*" );
+                System.out.print((j%5==0)?" ":"");  // add a space seperator every 5 *s
+            }
+            System.out.print("\n");
         }
-        System.out.print("\n");
-        
-        System.out.printf("%3d : ", n2);
-        for ( int i = 1; i <= n2; i++) {
-            System.out.print( "*" );
-            System.out.print((i%5==0)?" ":"");  // add a space seperator every 5 *s
-        }
-        System.out.print("\n");
-        
-        System.out.printf("%3d : ", n3);
-        for ( int i = 1; i <= n3; i++) {
-            System.out.print( "*" );
-            System.out.print((i%5==0)?" ":"");  // add a space seperator every 5 *s
-        }
-        System.out.print("\n");
-        
-        System.out.printf("%3d : ", n4);
-        for ( int i = 1; i <= n4; i++) {
-            System.out.print( "*" );
-            System.out.print((i%5==0)?" ":"");  // add a space seperator every 5 *s
-        }
-        System.out.print("\n");
-        
-        System.out.printf("%3d : ", n5);
-        for ( int i = 1; i <= n5; i++) {
-            System.out.print( "*" );
-            System.out.print((i%5==0)?" ":"");  // add a space seperator every 5 *s
-        }
-        System.out.print("\n");
-        
         System.out.print("Thank you, and have a nice day!\n\n");
     }
 }
