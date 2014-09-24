@@ -46,7 +46,6 @@ public class Ex5_24 {
             for ( j = 1; j <= space; j++ ) 
                 System.out.print( " ");
             space++;
-            
             for ( j = 1; j <= 2*(rows - i) - 1; j++ ) 
                 System.out.print( "*" );
             System.out.print("\n");
@@ -55,7 +54,7 @@ public class Ex5_24 {
                    // now try with user input
         
         // get user input
-        System.out.print( "\n\n**********\n\n");
+        System.out.print( "\n\n-------------------\n\n");
         System.out.print( "Also, I can print a diamond with odd # of rows...\n");
         System.out.print( "How many rows would you like? ");
         rows = input.nextInt();
