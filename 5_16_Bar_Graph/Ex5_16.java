@@ -25,7 +25,7 @@ public class Ex5_16 {
         
         Scanner input = new Scanner( System.in );
                 
-        System.out.print( "Tell me 5 integers, and I will print a bar of *s for that number!\n" );
+        System.out.print( "Tell me 5 integers, and I will print a bar of *s for those numbers!\n" );
         
         System.out.printf( "#1: ");
         n1 = input.nextInt();
@@ -42,35 +42,40 @@ public class Ex5_16 {
         System.out.print( "#5: ");
         n5 = input.nextInt();
         
-        System.out.print( "**********************************\n");
+        System.out.print( "--------------------------------------------\n");
         
-        System.out.printf("%d : ", n1);
+        System.out.printf("%3d : ", n1);
         for ( int i = 1; i <= n1; i++) {
             System.out.print( "*" );
+            System.out.print((i%5==0)?" ":"");  // add a space seperator every 5 *s
         }
         System.out.print("\n");
         
-        System.out.printf("%d : ", n2);
+        System.out.printf("%3d : ", n2);
         for ( int i = 1; i <= n2; i++) {
             System.out.print( "*" );
+            System.out.print((i%5==0)?" ":"");  // add a space seperator every 5 *s
         }
         System.out.print("\n");
         
-        System.out.printf("%d : ", n3);
+        System.out.printf("%3d : ", n3);
         for ( int i = 1; i <= n3; i++) {
             System.out.print( "*" );
+            System.out.print((i%5==0)?" ":"");  // add a space seperator every 5 *s
         }
         System.out.print("\n");
         
-        System.out.printf("%d : ", n4);
+        System.out.printf("%3d : ", n4);
         for ( int i = 1; i <= n4; i++) {
             System.out.print( "*" );
+            System.out.print((i%5==0)?" ":"");  // add a space seperator every 5 *s
         }
         System.out.print("\n");
         
-        System.out.printf("%d : ", n5);
+        System.out.printf("%3d : ", n5);
         for ( int i = 1; i <= n5; i++) {
             System.out.print( "*" );
+            System.out.print((i%5==0)?" ":"");  // add a space seperator every 5 *s
         }
         System.out.print("\n");
         
