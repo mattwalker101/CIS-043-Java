@@ -1,0 +1,19 @@
+EX 6.20 OUTPUT
+run:
+Welcome! I can calculate area of a circle!
+Tell me a radius (0 to end): 4
+
+The area of circle with radius 4 is... 50.265!
+
+Tell me a radius (0 to end): 2
+
+The area of circle with radius 2 is... 12.566!
+
+Tell me a radius (0 to end): 1
+
+The area of circle with radius 1 is... 3.142!
+
+Tell me a radius (0 to end): 0
+
+Thank you and have a great day!
+BUILD SUCCESSFUL (total time: 48 seconds)
