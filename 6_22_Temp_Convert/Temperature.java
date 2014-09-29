@@ -22,11 +22,11 @@ public class Temperature {
                           " Please choose: ");
     }
     
-    public double Celsius( int t ) {
-        return ( ( (9.0/5.0) * t ) + 32 );
+    public double toCelsius( int t ) {
+        return ( (5.0/9.0) * ( t - 32 ) );    
     }
     
-    public double Fahrenheit( int t ) {
-        return ( (5.0/9.0) * ( t - 32 ) );
+    public double toFahrenheit( int t ) {
+        return ( ( (9.0/5.0) * t ) + 32 );
     }
 }
