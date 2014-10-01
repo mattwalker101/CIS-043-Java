@@ -33,8 +33,11 @@ public class Ex6_25 {
         // loop user input and keep testing primes until sentinel is triggered
         while (userNum != 0) {
             //call primeCheck method
-            System.out.printf( "The number %d is %s\n\n", userNum, 
+            System.out.printf( "\n --> The number %d is %s\n", userNum, 
                     ( primeCheck( userNum )?"PRIME!":"NOT PRIME!" ) );
+            //call betterPrimeCheck method
+            System.out.printf("\n --> The number %d is %s\n\n", userNum,
+                    ( betterPrimeCheck( userNum )?"PRIME!":"NOT PRIME!" ) );
             System.out.print("\nTell me a number (0 to end):  ");
             userNum = input.nextInt();
         }
@@ -66,7 +69,7 @@ public class Ex6_25 {
             if ( num % test == 0) {
                 counter++;
 //  removed the following printf which shows the checks and last # tested for every NON-PRIME                
-//               System.out.printf("[n/2] method... checked %d times... last # tested = %d!\n", 
+//                System.out.printf("[n/2] (checked %d times/last # tested %d) ", 
 //                        counter, test);
                 return false;
             }
@@ -88,13 +91,13 @@ public class Ex6_25 {
             if ( num % test == 0) {
                 counter++;
 //  removed the following printf which shows the checks and last # tested for every NON-PRIME                
-//                System.out.printf("[n/2] method... checked %d times... last # tested = %d!\n", 
+//                System.out.printf("SQRT(n) - (checked %d times/last # tested %d) ", 
 //                        counter, test);
                 return false;
             }
             counter++;
         }
-        System.out.printf("SQRT(n) - (checked %d times/last # tested %d) ", 
+        System.out.printf("SQRT(n) (checked %d times/last # tested %d) ", 
                       counter, test);
         return true;
     }
