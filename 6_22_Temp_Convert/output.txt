@@ -1,4 +1,3 @@
-EX 6.20 OUTPUT
 run:
 Welcome to Matthew's Temperature Converter!
 (1) Convert Celsius to Fahrenheit
@@ -7,29 +6,9 @@ Welcome to Matthew's Temperature Converter!
  Please choose: 1
 
 Converting Celsius to FAHRENHEIT!
-Enter a temperature to convert: 30
-
-30 Celsius = 86.0 Fahrenheit
----------------------------------
-(1) Convert Celsius to Fahrenheit
-(2) Convert Fahrenheit to Celsius
-(3) Exit
- Please choose: 1
-
-Converting Celsius to FAHRENHEIT!
-Enter a temperature to convert: 0
-
-0 Celsius = 32.0 Fahrenheit
----------------------------------
-(1) Convert Celsius to Fahrenheit
-(2) Convert Fahrenheit to Celsius
-(3) Exit
- Please choose: 1
-
-Converting Celsius to FAHRENHEIT!
 Enter a temperature to convert: 100
 
-100 Celsius = 212.0 Fahrenheit
+100.0 Celsius = 212.0 Fahrenheit
 ---------------------------------
 (1) Convert Celsius to Fahrenheit
 (2) Convert Fahrenheit to Celsius
@@ -37,9 +16,19 @@ Enter a temperature to convert: 100
  Please choose: 2
 
 Converting Fahrenheit to CELSIUS!
-Enter a temperature to convert: 76
+Enter a temperature to convert: 50.5
 
-76 Fahrenheit = 24.4 Celsius
+50.5 Fahrenheit = 10.3 Celsius
+---------------------------------
+(1) Convert Celsius to Fahrenheit
+(2) Convert Fahrenheit to Celsius
+(3) Exit
+ Please choose: 1
+
+Converting Celsius to FAHRENHEIT!
+Enter a temperature to convert: -50
+
+-50.0 Celsius = -58.0 Fahrenheit
 ---------------------------------
 (1) Convert Celsius to Fahrenheit
 (2) Convert Fahrenheit to Celsius
@@ -47,9 +36,9 @@ Enter a temperature to convert: 76
  Please choose: 2
 
 Converting Fahrenheit to CELSIUS!
-Enter a temperature to convert: 10
+Enter a temperature to convert: 212
 
-10 Fahrenheit = -12.2 Celsius
+212.0 Fahrenheit = 100.0 Celsius
 ---------------------------------
 (1) Convert Celsius to Fahrenheit
 (2) Convert Fahrenheit to Celsius
@@ -57,4 +46,4 @@ Enter a temperature to convert: 10
  Please choose: 4
 Not a valid input!
 Please choose again: 3
-BUILD SUCCESSFUL (total time: 52 seconds)
+BUILD SUCCESSFUL (total time: 30 seconds)
