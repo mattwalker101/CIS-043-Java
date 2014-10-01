@@ -4,7 +4,7 @@ package ex6_22;
  *                                                        
  *    Exercise: 6.22                                          
  *                                                        
- *    Purpose: Temperature converstions (F -> C and C -> F)                                            
+ *    Purpose: Temperature conversions (F -> C and C -> F)                                            
  *                                                        
  *    Author: Matthew Walker                              
  *                                                        
@@ -22,37 +22,36 @@ public class Ex6_22 {
 
     public static void main(String[] args) {
 
-        // call constructor and declare variables
-        Temperature t = new Temperature (0);
+        // declare variables
         Scanner input = new Scanner( System.in );
-        int userTemp = 0;
+        double userTemp;
         int menuChoice;
         
         // display welcome menu
         System.out.printf("Welcome to Matthew's Temperature Converter!\n");
-        t.displayMenu();
+        displayMenu();
         menuChoice = input.nextInt();
         while (menuChoice != 3 ) {
             switch (menuChoice) {
                 case 1: {
                     System.out.printf("\n%s\n%s", "Converting Celsius to FAHRENHEIT!", 
                             "Enter a temperature to convert: ");
-                    userTemp = input.nextInt();
-                    System.out.printf("\n%d Celsius = %.1f Fahrenheit\n%s",
-                            userTemp, t.toFahrenheit(userTemp), 
+                    userTemp = input.nextDouble();
+                    System.out.printf("\n%.1f Celsius = %.1f Fahrenheit\n%s",
+                            userTemp, toFahrenheit(userTemp), 
                             "---------------------------------\n" );
-                    t.displayMenu();
+                    displayMenu();
                     menuChoice = input.nextInt();
                     break;
                 }
                 case 2: {
                     System.out.printf("\n%s\n%s", "Converting Fahrenheit to CELSIUS!", 
                             "Enter a temperature to convert: ");
-                    userTemp = input.nextInt();
-                    System.out.printf("\n%d Fahrenheit = %.1f Celsius\n%s",
-                            userTemp, t.toCelsius(userTemp), 
+                    userTemp = input.nextDouble();
+                    System.out.printf("\n%.1f Fahrenheit = %.1f Celsius\n%s",
+                            userTemp, toCelsius(userTemp), 
                             "---------------------------------\n" );
-                    t.displayMenu();
+                    displayMenu();
                     menuChoice = input.nextInt();
                     break;
                 }
@@ -67,5 +66,22 @@ public class Ex6_22 {
                 }
             }
         }
+    }
+    
+    public static void displayMenu() {
+        // show the menu of choices for user
+        System.out.printf("%s%s%s%s",
+                          "(1) Convert Celsius to Fahrenheit\n",
+                          "(2) Convert Fahrenheit to Celsius\n",
+                          "(3) Exit\n",
+                          "Please choose: ");
+    }
+    
+    public static double toCelsius( double t ) {
+        return ( (5.0/9.0) * ( t - 32 ) );    
+    }
+    
+    public static double toFahrenheit( double t ) {
+        return ( ( (9.0/5.0) * t ) + 32 );
     }
 }
