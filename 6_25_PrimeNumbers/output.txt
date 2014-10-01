@@ -1,0 +1,92 @@
+run:
+I am a Prime Number Superstar!
+I can tell if a number is prime...
+
+Tell me a number (0 to end):  1
+[n/2] (checked 1 times/last # tested 2) 
+ --> The number 1 is PRIME!
+SQRT(n) (checked 1 times/last # tested 2) 
+ --> The number 1 is PRIME!
+
+
+Tell me a number (0 to end):  3
+[n/2] (checked 1 times/last # tested 2) 
+ --> The number 3 is PRIME!
+SQRT(n) (checked 1 times/last # tested 2) 
+ --> The number 3 is PRIME!
+
+
+Tell me a number (0 to end):  6
+
+ --> The number 6 is NOT PRIME!
+
+ --> The number 6 is NOT PRIME!
+
+
+Tell me a number (0 to end):  47
+[n/2] (checked 23 times/last # tested 24) 
+ --> The number 47 is PRIME!
+SQRT(n) (checked 6 times/last # tested 7) 
+ --> The number 47 is PRIME!
+
+
+Tell me a number (0 to end):  0
+
+Now I will show you all the prime numbers less than 100...
+First using the [n/2] method...
+[n/2] (checked 1 times/last # tested 2)  -> PRIME # [1]
+[n/2] (checked 1 times/last # tested 2)  -> PRIME # [2]
+[n/2] (checked 1 times/last # tested 2)  -> PRIME # [3]
+[n/2] (checked 2 times/last # tested 3)  -> PRIME # [5]
+[n/2] (checked 3 times/last # tested 4)  -> PRIME # [7]
+[n/2] (checked 5 times/last # tested 6)  -> PRIME # [11]
+[n/2] (checked 6 times/last # tested 7)  -> PRIME # [13]
+[n/2] (checked 8 times/last # tested 9)  -> PRIME # [17]
+[n/2] (checked 9 times/last # tested 10)  -> PRIME # [19]
+[n/2] (checked 11 times/last # tested 12)  -> PRIME # [23]
+[n/2] (checked 14 times/last # tested 15)  -> PRIME # [29]
+[n/2] (checked 15 times/last # tested 16)  -> PRIME # [31]
+[n/2] (checked 18 times/last # tested 19)  -> PRIME # [37]
+[n/2] (checked 20 times/last # tested 21)  -> PRIME # [41]
+[n/2] (checked 21 times/last # tested 22)  -> PRIME # [43]
+[n/2] (checked 23 times/last # tested 24)  -> PRIME # [47]
+[n/2] (checked 26 times/last # tested 27)  -> PRIME # [53]
+[n/2] (checked 29 times/last # tested 30)  -> PRIME # [59]
+[n/2] (checked 30 times/last # tested 31)  -> PRIME # [61]
+[n/2] (checked 33 times/last # tested 34)  -> PRIME # [67]
+[n/2] (checked 35 times/last # tested 36)  -> PRIME # [71]
+[n/2] (checked 36 times/last # tested 37)  -> PRIME # [73]
+[n/2] (checked 39 times/last # tested 40)  -> PRIME # [79]
+[n/2] (checked 41 times/last # tested 42)  -> PRIME # [83]
+[n/2] (checked 44 times/last # tested 45)  -> PRIME # [89]
+[n/2] (checked 48 times/last # tested 49)  -> PRIME # [97]
+
+
+Next, we use SQRT(n) as upper test limit...
+SQRT(n) (checked 1 times/last # tested 2)  -> PRIME # [1]
+SQRT(n) (checked 1 times/last # tested 2)  -> PRIME # [2]
+SQRT(n) (checked 1 times/last # tested 2)  -> PRIME # [3]
+SQRT(n) (checked 2 times/last # tested 3)  -> PRIME # [5]
+SQRT(n) (checked 2 times/last # tested 3)  -> PRIME # [7]
+SQRT(n) (checked 3 times/last # tested 4)  -> PRIME # [11]
+SQRT(n) (checked 3 times/last # tested 4)  -> PRIME # [13]
+SQRT(n) (checked 4 times/last # tested 5)  -> PRIME # [17]
+SQRT(n) (checked 4 times/last # tested 5)  -> PRIME # [19]
+SQRT(n) (checked 4 times/last # tested 5)  -> PRIME # [23]
+SQRT(n) (checked 5 times/last # tested 6)  -> PRIME # [29]
+SQRT(n) (checked 5 times/last # tested 6)  -> PRIME # [31]
+SQRT(n) (checked 6 times/last # tested 7)  -> PRIME # [37]
+SQRT(n) (checked 6 times/last # tested 7)  -> PRIME # [41]
+SQRT(n) (checked 6 times/last # tested 7)  -> PRIME # [43]
+SQRT(n) (checked 6 times/last # tested 7)  -> PRIME # [47]
+SQRT(n) (checked 7 times/last # tested 8)  -> PRIME # [53]
+SQRT(n) (checked 7 times/last # tested 8)  -> PRIME # [59]
+SQRT(n) (checked 7 times/last # tested 8)  -> PRIME # [61]
+SQRT(n) (checked 8 times/last # tested 9)  -> PRIME # [67]
+SQRT(n) (checked 8 times/last # tested 9)  -> PRIME # [71]
+SQRT(n) (checked 8 times/last # tested 9)  -> PRIME # [73]
+SQRT(n) (checked 8 times/last # tested 9)  -> PRIME # [79]
+SQRT(n) (checked 9 times/last # tested 10)  -> PRIME # [83]
+SQRT(n) (checked 9 times/last # tested 10)  -> PRIME # [89]
+SQRT(n) (checked 9 times/last # tested 10)  -> PRIME # [97]
+BUILD SUCCESSFUL (total time: 15 seconds)
