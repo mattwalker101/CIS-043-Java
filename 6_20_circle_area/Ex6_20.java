@@ -21,32 +21,32 @@ public class Ex6_20 {
 
     public static void main(String[] args) {
         
-        int radius;
-        
-        // call constructor for new circle
-        Circle c = new Circle(1);
+        double radius;
         
         // display welcome and prompt user input
         System.out.printf("%s\n%s","Welcome! I can calculate area of a circle!",
                         "Tell me a radius (0 to end): ");
         Scanner input = new Scanner( System.in );
-        radius = input.nextInt();
+        radius = input.nextDouble();
         
+        // loop until sentinel
         while ( radius != 0 ) {
             if ( radius > 0 ) {
-                System.out.printf("\nThe area of circle with radius %d is... %.3f!\n\n", 
-                        radius, c.circleArea(radius) );
+                System.out.printf("\nThe area of circle with radius %.2f is... %.3f!\n\n", 
+                        radius, circleArea(radius) );
+                // repeat loop
                 System.out.print("Tell me a radius (0 to end): ");
-                radius = input.nextInt();
+                radius = input.nextDouble();
             } else {
                 System.out.print("Please enter a positive number!\n");
                 System.out.print("Tell me a radius (0 to end): ");
-                radius = input.nextInt();
+                radius = input.nextDouble();
             }
         }
-        
         System.out.print("\nThank you and have a great day!\n");
-        
     }
     
+    public static double circleArea( double r ) {
+        return ( r * r * Math.PI );
+    }
 }
