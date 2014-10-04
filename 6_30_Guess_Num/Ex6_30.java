@@ -25,6 +25,7 @@ public class Ex6_30 {
     public static void main(String[] args) {
 
         int num, guess;
+        int counter;
         int exitGame;
         
         Random randomNumbers = new Random();
@@ -39,15 +40,25 @@ public class Ex6_30 {
             // get users' guess
             System.out.printf("What is your guess? ");
             guess = input.nextInt();
+            counter = 1;
             
         
             // run testGuess method to determine if too high or too low
             while (guess!=num) {
-                System.out.printf("%s Try again...\n", (guess<num?"Too low!":"Too high!"));
+                System.out.printf("%s Try again...\n? ", (guess<num?"Too low!":"Too high!"));
                 guess = input.nextInt();
+                counter++;
             }
- 
-            System.out.println("Congratulation! You guessed the number!\nPlay again?( Y or y) ");
+            
+            if (counter < 10) {
+                System.out.printf("Wow! You know the secret, or got really lucky! You got it in %d tries!!\n", counter);
+            } else if (counter == 10) {
+                System.out.println("Right on! Got it in ten!");
+            } else {
+                System.out.printf("Good effort, but you can do better than %d tries!\n", counter);
+            }
+                
+            System.out.println("\nPlay again?( Y or y) ");
             exitGame = input.next().charAt(0);
         } while (exitGame == 'Y' || exitGame == 'y');
         
