@@ -1,0 +1,26 @@
+Ex7.8
+
+a) System.out.printf("Element 6 of array f = %d\n", f[5] );
+
+b) int[] g = { 8, 8, 8, 8, 8 };
+
+c) 	int arrayTotal = 0;
+	for ( int counter = 0; counter < c.length; counter++ ) 
+		arrayTotal += c[ counter ];
+		
+	System.out.printf("Total = %d\n", arrayTotal );
+
+d) for ( int counter = 0; counter < a.length; counter++ ) 
+		b[ counter ] = a [ counter ];
+		
+e) 	int smallest = w[0], largest = w[0];
+	for ( int counter = 0; counter < w.length; counter++ ) {
+		if (even[i] > largest)
+			largest = even[i];
+		if (even[i] < smallest)
+			smallest = even[i];
+	}
+	System.out.printf("Smallest = %d\nLargest = %d\n", smallest, largest);
+	
+		
+		
