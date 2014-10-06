@@ -1,0 +1,16 @@
+EX7.17 OUTPUT
+run:
+Frequency of Sum of 2 Rolled Dice
+Sum	Frequency
+  2	  1000637
+  3	  2000018
+  4	  2999770
+  5	  3999606
+  6	  4999471
+  7	  5997649
+  8	  4998114
+  9	  4000971
+ 10	  2999549
+ 11	  2002344
+ 12	  1001871
+BUILD SUCCESSFUL (total time: 1 second)
