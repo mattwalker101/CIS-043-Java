@@ -1,0 +1,30 @@
+run:
+This is a Savings Account Calculator!
+- - - - - - - - 
+Monthly balances for one year at 0.04
+Balances:
+		Saver 1	Saver 2
+Base:		$2000.00	$3000.00
+Month 1:	$2006.67	$3010.00
+Month 2:	$2013.36	$3020.03
+Month 3:	$2020.07	$3030.10
+Month 4:	$2026.80	$3040.20
+Month 5:	$2033.56	$3050.33
+Month 6:	$2040.33	$3060.50
+Month 7:	$2047.14	$3070.70
+Month 8:	$2053.96	$3080.94
+Month 9:	$2060.81	$3091.21
+Month 10:	$2067.68	$3101.51
+Month 11:	$2074.57	$3111.85
+Month 12:	$2081.48	$3122.22
+
+After raising interest to 0.05
+
+Balances:
+Saver 1	Saver 2
+$2090.16	$3135.23
+
+Goodbye!
+
+
+BUILD SUCCESSFUL (total time: 0 seconds)
