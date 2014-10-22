@@ -1,72 +1,68 @@
+package ex8_4;
 /*
-Rectangle.java
--------
-- length: double
-- Width: double
--------
-Rectangle()                     // no argument constructor... calls the 2nd constructor using this( , ) to call 2 argument constructor
-Rectangle(l:double, w:double)   // full argument constructor... call the Set Method
-Rectangle(l:double)             // optional single argument constructor
-+ getLength(): double
-+ setLength(l:double): void   // validate
-+ getWidth(): double
-+ setWidth(w:double): void    // validate
-
-+ getArea(): double
-+ getPerimeter(): double
-+ toString(): String // should contain this rectangle's length, width, area, perimeter info
-
-
-TestProgram:
-create 2 rectangles - 1 using rectangle(), 1 using rectangle(x,y) constructors
-print - call toString (include length, width, perimeter, area)
-call set to change length and width
-print
-
-
+Author: Matthew Walker
 */
 
+public class Rectangle {
+    private double length;
+    private double width;
 
-package ex8_4;
-
-import java.util.Scanner;
-
-public class Ex8_4 {
-
-    public static void main(String[] args) {
-        int choice = 1;
-        double l, w;
-        Rectangle r1 = new Rectangle();
-        Rectangle r2 = new Rectangle(3,4);
-        Scanner input = new Scanner(System.in);
-        
-        System.out.println("Welcome to the Amazing Rectangle Program!");
-        System.out.printf("%s", r1.toString() );
-        while (choice != 3) {
-            r1.displayMenu();
-            choice = input.nextInt();
-            switch(choice) {
-                case 1:
-                    System.out.print("Enter Length: ");
-                    l = input.nextDouble();
-                    r1.setLength(l);
-                    System.out.printf("%s", r1.toString() );
-                    break;
-                case 2:
-                    System.out.print("Enter Width: ");
-                    w = input.nextDouble();
-                    r1.setWidth(w);
-                    System.out.printf("%s", r1.toString() );
-                    break;
-                case 3:
-                    break;
-                default:
-                    System.out.printf("%d is not valid. Try again!\n", choice);
-                    r1.displayMenu();
-                    choice = input.nextInt();
-                    break;
-            }
+    public Rectangle() {
+        this( 1, 1);
+    }
+    
+    public Rectangle(double l, double w) {
+        setRectangle( l, w );
+    }
+    
+    public void setRectangle(double l, double w) {
+        setLength(l);
+        setWidth(w);
+    }
+    
+    public void setLength( double l ) {
+        if ( l > 0 && l < 100 ) {
+            length = l;
+        } else {
+            System.out.print("Value must be greater than 0 and less than 100!\n");
         }
-        System.out.print("Goodbye!\n");
-    }   
+    }
+    
+    public void setWidth( double w) {
+        if ( w > 0 && w < 100 ) {
+            width = w;
+        } else {
+            System.out.print("Value must be greater than 0 and less than 100!\n");
+        }
+    }
+    
+    public double getLength() {
+        return length;
+    }
+    
+    public double getWidth() {
+        return width;
+    }
+    
+    public double getArea() {
+        return length * width;
+    }
+    
+    public double getPerimeter() {
+        return (length*2 + width*2);
+    }
+    
+    public String toString() {
+        return String.format ("%s%.2f\n%s%.2f\n%s%.2f\n%s%.2f\n","Length:\t\t", getLength(), 
+        "Width:\t\t", getWidth(), "Perimeter:\t", getPerimeter(), 
+        "Area:\t\t", getArea() );
+    }
+    
+    public void displayMenu() {
+        System.out.printf("%s\n%s\n%s\n%s\n", 
+                "(1) Set Length",
+                "(2) Set Width",
+                "(3) Exit",
+                "Choose:  ");
+    }
 }
