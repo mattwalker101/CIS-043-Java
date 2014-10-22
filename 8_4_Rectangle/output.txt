@@ -1,0 +1,44 @@
+EX 8.4 OUTPUT
+run:
+Welcome to the Amazing Rectangle Program!
+Length:		1.00
+Width:		1.00
+Perimeter:	4.00
+Area:		1.00
+(1) Set Length
+(2) Set Width
+(3) Exit
+Choose:  
+1
+Enter Length: 4
+Length:		4.00
+Width:		1.00
+Perimeter:	10.00
+Area:		4.00
+(1) Set Length
+(2) Set Width
+(3) Exit
+Choose:  
+2
+Enter Width: 6
+Length:		4.00
+Width:		6.00
+Perimeter:	20.00
+Area:		24.00
+(1) Set Length
+(2) Set Width
+(3) Exit
+Choose:  
+1
+Enter Length: 2
+Length:		2.00
+Width:		6.00
+Perimeter:	16.00
+Area:		12.00
+(1) Set Length
+(2) Set Width
+(3) Exit
+Choose:  
+3
+Goodbye!
+BUILD SUCCESSFUL (total time: 21 seconds)
