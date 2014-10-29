@@ -1,0 +1,54 @@
+run:
+This is a super Date Converter!
+
+
+Enter 1 for format MM/DD/YYYY
+Enter 2 for format Month DD, YYYY
+Enter 3 for format DDD YYYY
+Enter 4 to exit
+Choice: 1
+Enter Month(1-12): 7
+Enter Day of Month: 8
+Enter Year: 2014
+
+MM/DD/YYYY: 7/8/2014
+Month DD, YYYY: July 8, 2014
+DDD YYYY: 189 2014
+---------------
+
+
+Enter 1 for format MM/DD/YYYY
+Enter 2 for format Month DD, YYYY
+Enter 3 for format DDD YYYY
+Enter 4 to exit
+Choice: 2
+Enter Month Name: March
+Enter Day of Month: 13
+Enter Year: 2014
+
+MM/DD/YYYY: 3/13/2014
+Month DD, YYYY: March 13, 2014
+DDD YYYY: 72 2014
+---------------
+
+
+Enter 1 for format MM/DD/YYYY
+Enter 2 for format Month DD, YYYY
+Enter 3 for format DDD YYYY
+Enter 4 to exit
+Choice: 3
+Enter Day of Year: 74
+Enter Year: 2014
+
+MM/DD/YYYY: 3/15/2014
+Month DD, YYYY: March 15, 2014
+DDD YYYY: 74 2014
+---------------
+
+
+Enter 1 for format MM/DD/YYYY
+Enter 2 for format Month DD, YYYY
+Enter 3 for format DDD YYYY
+Enter 4 to exit
+Choice: 4
+BUILD SUCCESSFUL (total time: 1 minute 11 seconds)
