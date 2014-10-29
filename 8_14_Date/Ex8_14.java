@@ -9,7 +9,7 @@
  *    Class: CIS 043 - Software Development with Java     
  *           Mission College, Santa Clara, CA             
  *                                                        
- *    Due Date: 10/27/14                                              
+ *    Due Date: 10/29/14                                              
  *                                                        
  **********************************************************/
 
@@ -67,7 +67,10 @@ public class Ex8_14 {
                     d1.displayMenu();
                     choice = input.nextInt();
                     break;
-                    
+                default:
+                    System.out.print("Not a valid choice! Enter (1-4): ");
+                    choice = input.nextInt();
+                    break;
             }
         }
     }
