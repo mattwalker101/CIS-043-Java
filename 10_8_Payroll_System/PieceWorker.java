@@ -64,7 +64,7 @@ public class PieceWorker extends Employee {
     @Override
    public double earnings()
    {
-      return pieces*wage;
+      return getPieces()*getWage();
    }
     
 }
