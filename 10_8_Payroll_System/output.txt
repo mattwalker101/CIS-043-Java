@@ -1,0 +1,47 @@
+run:
+salaried employee: John Smith
+Social Security Number: 111-11-1111
+Birthday: 3/15/1970
+
+weekly salary: $800.00
+earned $800.00
+-------------------
+hourly employee: Clara Oswald
+Social Security Number: 222-22-2222
+Birthday: 11/12/1982
+
+hourly wage: $16.75; hours worked: 40.00
+Happy Birthday to you this month!
+You get a $100 bonus!
+
+weekly salary: $670.00
+Instead, you earned $770.00
+-------------------
+commission employee: Amy Pond
+Social Security Number: 333-33-3333
+Birthday: 6/25/1984
+
+gross sales: $10,000.00; commission rate: 0.06
+earned $600.00
+-------------------
+base-salaried commission employee: Rory Pond
+Social Security Number: 444-44-4444
+Birthday: 5/14/1983
+
+gross sales: $5,000.00; commission rate: 0.04; base salary: $300.00
+new base salary with 10% increase is: $330.00
+earned $530.00
+-------------------
+piece worker: River Song
+Social Security Number: 555-55-5555
+Birthday: 12/25/2035
+
+pieces: 750; wage: $0.80
+earned $600.00
+-------------------
+Employee 0 is a ex10_8.SalariedEmployee
+Employee 1 is a ex10_8.HourlyEmployee
+Employee 2 is a ex10_8.CommissionEmployee
+Employee 3 is a ex10_8.BasePlusCommissionEmployee
+Employee 4 is a ex10_8.PieceWorker
+BUILD SUCCESSFUL (total time: 0 seconds)
