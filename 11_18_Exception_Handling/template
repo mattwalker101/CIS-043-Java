@@ -1,0 +1,69 @@
+define ExceptionA (inherits from class Exception)
+ExceptionB (inherits from ExcpetionA)
+
+try blocks that throw exceptions: ExceptionA, ExceptionB, NullPointerException, IOException
+
+
+SAMPLE OUTPUT
+Exception A Occurred
+Exception B Occurred
+java.lang.NullPointerException
+java.io.IOException
+
+
+
+
+public class UsingExceptions 
+{
+   public static void main( String[] args )
+   {
+     
+         throwExceptionA(); // call method throwException
+	     throwExceptionB();
+		 throwNullPointer();
+		 throwIOException();
+     
+   } // end main
+
+   // demonstrate try...catch
+   public static void throwExceptionA() // throw ExceptionA
+   {
+      try // throw an exception and immediately catch it
+      { 
+         //System.out.println( "Method throwException" );
+         throw new ExceptionA(); // generate exception
+      } // end try
+      catch ( ExceptionA exception ) // catch exception thrown in try
+      {
+         System.err.printf("Exception: %s \n", exception);
+         System.err.println ("ExceptionA handled in method throwExceptionA \n" );
+         //throw exception; // rethrow for further processing
+
+      } // end catch   
+   } // end method throwExceptionA
+   public static void throwExceptionB()
+   {
+   //TODO: add code to handle ExceptionB similar to above
+   }
+   public static void throwNullPointer()
+   {
+   //TODO: add code to handle NullPointer similar to above
+   }
+    public static void throwIOException()
+   {
+   //TODO: add code to handle IOException similar to above, need to import java.io.IOException
+   }
+} // end class UsingExceptions
+
+
+
+
+public class ExceptionA extends Exception 
+  {
+  //TODO implement toString method
+  public String toString()
+	{
+		return String.format(" Exception A occurred ");
+	}
+  }
+  
