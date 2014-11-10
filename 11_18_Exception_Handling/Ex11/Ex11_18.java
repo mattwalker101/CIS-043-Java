@@ -13,4 +13,18 @@
  *                                                        
  **********************************************************/
  
+ public class Ex11_18
+ {
+    public static void main( String[] args )
+    {
+        try {
+          method1();
+        }
+        catch ( Exception exception ) {
+          System.err.printf( "%s\n\n", exception.getMessage() );
+          exception.printStackTrace();
+        }
+    }
+ }
+ 
  
