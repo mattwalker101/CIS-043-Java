@@ -1,13 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*********************************************************
+ *                                                        
+ *    Exercise: 14.12                                          
+ *                                                        
+ *    Purpose:  Create a simple temperature converter                                         
+ *                                                        
+ *    Author: Matthew Walker                              
+ *                                                        
+ *    Class: CIS 043 - Software Development with Java     
+ *           Mission College, Santa Clara, CA             
+ *                                                        
+ *    Due Date: 11/17/14                                              
+ *                                                        
+ **********************************************************/
 
-/**
- *
- * @author Student
- */
 public class TempConvert extends javax.swing.JFrame {
 
     /**
