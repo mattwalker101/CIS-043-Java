@@ -37,6 +37,8 @@ public class TempConvert extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         TempCelsius = new javax.swing.JLabel();
         labelResult = new javax.swing.JLabel();
+        btnCtoF = new javax.swing.JRadioButton();
+        btnFtoC = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Convert To Celsius");
@@ -52,11 +54,25 @@ public class TempConvert extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel1.setText("Enter a Temperature (in Fahrenheit):");
+        jLabel1.setText("Enter a Temperature:");
 
         labelResult.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
         labelResult.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelResult.setText("That Temperature in Celsius is...");
+        labelResult.setText("Result:");
+
+        btnCtoF.setText("C => F");
+        btnCtoF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCtoFActionPerformed(evt);
+            }
+        });
+
+        btnFtoC.setText("F => C");
+        btnFtoC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFtoCActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -69,26 +85,39 @@ public class TempConvert extends javax.swing.JFrame {
                         .addComponent(TempCelsius)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(labelResult, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(InputTemp, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(49, 49, 49)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnFtoC)
+                            .addComponent(btnCtoF))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(InputTemp, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelResult, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(80, 80, 80))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(InputTemp, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(InputTemp, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(54, 54, 54)
+                        .addComponent(btnCtoF)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnFtoC)
+                .addGap(45, 45, 45)
+                .addComponent(TempCelsius)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(labelResult)
-                .addGap(38, 38, 38)
-                .addComponent(TempCelsius))
+                .addContainerGap(108, Short.MAX_VALUE))
         );
 
         pack();
@@ -108,6 +137,16 @@ public class TempConvert extends javax.swing.JFrame {
         labelResult.setText("Result: "+  String.format("%.2f",result));
         
     }                                         
+
+    private void btnCtoFActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // set formula to convert Celsius to Fahrenheit
+        // f = (9/5)(c) + 32
+    }                                       
+
+    private void btnFtoCActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // set formula to convert Fahrenheit to Celsius
+        // c = (5/9)(temp - 32)
+    }                                       
 
     /**
      * @param args the command line arguments
@@ -147,6 +186,8 @@ public class TempConvert extends javax.swing.JFrame {
     // Variables declaration - do not modify                     
     private javax.swing.JTextField InputTemp;
     private javax.swing.JLabel TempCelsius;
+    private javax.swing.JRadioButton btnCtoF;
+    private javax.swing.JRadioButton btnFtoC;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel labelResult;
     // End of variables declaration                   
