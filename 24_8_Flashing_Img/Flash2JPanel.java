@@ -1,12 +1,19 @@
+// not working because lines 14-16 say javax.jnlp doesn't exist
+
+package ex24_8;
+
 // Exercise 24.8 Solution: Flash2JPanel.java
 // Program flashes an image.
-import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+import javax.jnlp.FileContents;
+import javax.jnlp.FileOpenService;
+import javax.jnlp.ServiceManager;
 
 public class Flash2JPanel extends JPanel 
 {
@@ -34,16 +41,19 @@ public class Flash2JPanel extends JPanel
    public void paintComponent( Graphics g )
    {
      // call paintComponent;
+       super.paintComponent( g );
 
 	 // set graphic color to be BLUE
+       g.setColor( Color.blue );
       
       // Check Flash flag
-		// if flash, then draw image
-		
-		
-		// else draw rectangle background
-      
-	  
+       if (flash) {     // if flash, then draw image
+           g.drawImage( image.getImage(), imageWidth, 
+                        imageHeight, this);
+       } else {		// else draw rectangle background
+           g.drawRect(0, 0, imageWidth, imageHeight);
+           
+       }
    } // end method paint
 
    // inner class to handle action events from Timer
@@ -57,5 +67,6 @@ public class Flash2JPanel extends JPanel
       } // end method actionPerformed
    } // end class TimerHandler
 } // end class Flash2JPanel
+
 
 
