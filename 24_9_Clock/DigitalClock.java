@@ -1,3 +1,21 @@
+
+/*********************************************************
+ *                                                        
+ *    Exercise: 23.9                                          
+ *                                                        
+ *    Purpose: Use applet to create a digital clock                                           
+ *                                                        
+ *    Author: Matthew Walker                              
+ *                                                        
+ *    Class: CIS 043 - Software Development with Java     
+ *           Mission College, Santa Clara, CA             
+ *                                                        
+ *    Due Date: 12/1/14                                               
+ *                                                        
+ **********************************************************/
+
+package ex24_9;
+
 // Exercise 24.9 Solution: DigitalClock.java
 // Program creates a digital clock.
 import java.awt.event.ActionListener;
@@ -23,22 +41,24 @@ public class DigitalClock extends JApplet
    public void paint( Graphics g )
    {
       // TODO: start paint
+       super.paint( g );
 
       // TODO: draw the time string at coordinates (20,50)
+       g.drawString( theTime, 20, 50 );
 	  
    } // end method paint
 
    // start timer
    public void start()
    {
-      // TODO: start timer 
+      timer.start();
 	  
    } // end method start
 
    // stop timer
    public void stop()
    {
-     // TODO: stop timer
+     timer.stop();
 	 
    } // end method stop
 
@@ -48,11 +68,12 @@ public class DigitalClock extends JApplet
       // respond to Timer's event
       public void actionPerformed( ActionEvent actionEvent )
       {
-         // TODO: get current date and time
+         theTime = new Date().toString(); // get current date and time
 		 
          repaint(); // repaint animator
       } // end method actionPerformed
    } // end class TimerHandler
 } // end class DigitalClock
+
 
 
