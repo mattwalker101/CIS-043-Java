@@ -1,7 +1,6 @@
-
 /*********************************************************
  *                                                        
- *    Exercise: 23.9                                          
+ *    Exercise: 24.9                                          
  *                                                        
  *    Purpose: Use applet to create a digital clock                                           
  *                                                        
