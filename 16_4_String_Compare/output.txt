@@ -1,0 +1,27 @@
+OUTPUT 16.4
+run:
+Enter the first string: hello
+
+Enter the second string: hell is hot
+
+How many characters should I compare? 3
+Enter starting index for comparison: 0
+Match of length [3] found at index [0]!
+
+Goodbye!
+
+
+BUILD SUCCESSFUL (total time: 11 seconds)
+
+run:
+Enter the first string: hello again
+
+Enter the second string: hello my dear
+
+How many characters should I compare? 3
+Enter starting index for comparison: 6
+No match of length [3] found at index [6]!
+Goodbye!
+
+
+BUILD SUCCESSFUL (total time: 21 seconds)
